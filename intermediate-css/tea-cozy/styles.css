@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* HEADER SECTION */
+header {
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header img {
+  height: 50px;
+  padding: 0 0 0 10px;
+  align-self: center;
+}
+
+header .top-nav {
+  padding: 0 10px 0 0;
+}
+
+header .top-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+header a {
+  color: seashell;
+  margin: 0 0 0 20px;
+}
+
+/* HERO SECTION */
+.hero {
+  margin: 69px auto 0 auto;
+  min-height: 700px;
+  max-width: 1200px;
+  background-image: url("./img/mission-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h2,
+.hero h4 {
+  margin: 10px 0;
+}
+
+.hero .mission {
+  background-color: black;
+  text-align: center;
+}
+
+/* TEA OF THE MONTH SECTION */
+.tea-of-month {
+  padding: 40px 0;
+}
+
+.tea-of-month h2,
+.tea-of-month h3 {
+  text-align: center;
+}
+
+.images {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.images figure {
+  padding: 0;
+  margin: 0 10px 20px 10px;
+}
+
+.images img {
+  height: 200px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.images figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* LOCATIONS SECTION */
+.locations {
+  max-width: 1200px;
+  min-height: 500px;
+  margin: 30px auto 0 auto;
+  background-image: url("./img/locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.locations h2 {
+  margin: 15px 0;
+}
+
+.all-locations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location-container {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  opacity: 1;
+}
+
+/* FOOTER SECTION */
+footer .contact {
+  text-align: center;
+  min-height: 200px;
+}
+
+footer h2 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+footer .left-aligned {
+  margin: 10px 0 30px 20px;
+}
