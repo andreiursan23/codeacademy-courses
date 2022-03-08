@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --main-font: "Arvo", serif;
+  font-size: 16px;
+
+  /* Colors */
+  --white: #fefefe;
+  --light-purple: #8160a9;
+  --purple: #634785;
+  --mint: #4ef9af;
+  --turquoise: #55d6be;
+}
+
+/* Typography */
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 6.25rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Layout */
+.container {
+  padding: 1rem 2.5rem;
+}
+
+/* General styles */
+.text-accent {
+  color: var(--purple);
+}
+
+.btn {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 3px solid;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 1;
+  transition: opacity ease-in-out 0.3s;
+}
+
+/* Navbar styling */
+.nav-bar {
+  display: flex;
+}
+
+.nav-link {
+  display: inline-block;
+  color: var(--light-purple);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  cursor: pointer;
+  border-top: 4px solid var(--white);
+  transition: border-top ease-in-out 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--purple);
+  border-top: 4px solid var(--turquoise);
+  transition: border-top ease-in-out 0.2s;
+}
+
+/* Banner styling */
+header {
+  padding: 250px 0;
+  background-color: var(--light-purple);
+  color: var(--white);
+  text-align: center;
+}
+
+.action-btn {
+  margin-top: 1rem;
+  background: var(--mint);
+  color: var(--purple);
+  padding: 1rem 2rem;
+}
+
+/* Gritter Section */
