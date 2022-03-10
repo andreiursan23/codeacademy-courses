@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Cheatsheets</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">CSS Positioning and Display</h1>
+
+      <h2 class="subtitle">Positioning</h2>
+      <p class="definition">
+        Positioning in CSS provides designers and developers options for
+        positioning HTML elements on a web page. The CSS position can be set to
+        static, relative, absolute or fixed.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Property Name</th>
+            <th>Definition</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- First table row -->
+          <tr>
+            <td><p>z-index property</p></td>
+            <td>
+              <p>
+                The CSS z-index property specifies how far back or how far
+                forward an element will appear on a web page when it overlaps
+                other elements.
+              </p>
+              <p>
+                The z-index property uses integer values, which can be positive
+                or negative values. The element with the highest z-index value
+                will be at the foreground, while the element with the lowest
+                z-index value will be at the back.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>//`element1` will overlap `element2`</p>
+                <br />
+                <p>.element1 {</p>
+                <p class="indented-text">position: absolute;</p>
+                <p class="indented-text">z-index: 1;</p>
+                <p>}</p>
+                <br />
+                <p>.element2 {</p>
+                <p class="indented-text">position: absolute;</p>
+                <p class="indented-text">z-index: -1;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+          <!-- Second table row -->
+          <tr>
+            <td>
+              <p>Position: fixed</p>
+            </td>
+            <td>
+              <p>
+                When the CSS position has a value of fixed, it is set/pinned to
+                a specific spot on a page. The fixed element stays the same
+                regardless of scrolling. The navigation bar is a great example
+                of an element that is often set to <code>position:fixed;</code>, enabling the
+                user to scroll through the web page and still access the
+                navigation bar.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>navbar {</p>
+                <p class="indented-text">position : fixed;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+          <!-- Third table row -->
+          <tr>
+            <td>
+              <p>Position: absolute</p>
+            </td>
+            <td>
+              <p>
+                The value absolute for the CSS property position enables an
+                element to ignore sibling elements and instead be positioned
+                relative to its closest parent element that is positioned with
+                relative or absolute. The absolute value removes an element
+                entirely from the document flow. By using the positioning
+                attributes top, left, bottom and right, an element can be
+                positioned anywhere as expected.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>.element {</p>
+                <p class="indented-text">position : absolute;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+          <!-- Forth table row -->
+          <tr>
+            <td>
+              <p>Position: relative</p>
+            </td>
+            <td>
+              <p>
+                The value relative of the CSS position property enables an
+                element to be positioned relative to where it would have
+                originally been on a web page. The offset properties can be used
+                to determine the actual position of the element relative to its
+                original position. Without the offset properties, this
+                declaration will have no effect on its positioning, it will act
+                as the default value static of the position property.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>.element {</p>
+                <p class="indented-text">position : relative;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="subtitle">Display</h2>
+      <p class="definition">
+        The CSS display property determines the type of render block for an
+        element. The most common values for this property are block, inline, and
+        inline-block.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property Name</th>
+            <th>Definition</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- First table row -->
+          <tr>
+            <td>
+              <p>Block-level</p>
+            </td>
+            <td>
+              <p>
+                Block-level elements take up the full width of their container
+                with line breaks before and after, and can have their height and
+                width manually adjusted.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>.container1 {</p>
+                <p class="indented-text">display: block;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+          <!-- Second table row -->
+          <tr>
+            <td>
+              <p>Inline</p>
+            </td>
+            <td>
+              <p>
+                Inline elements take up as little space as possible, flow
+                horizontally, and cannot have their width or height manually
+                adjusted.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>.container2 {</p>
+                <p class="indented-text">display: inline;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+          <!-- Third table row -->
+          <tr>
+            <td>
+              <p>Inline-block</p>
+            </td>
+            <td>
+              <p>
+                Inline-block elements can appear next to each other, and can
+                have their width and height manually adjusted.
+              </p>
+            </td>
+            <td>
+              <code>
+                <p>.container3 {</p>
+                <p class="indented-text">display: inline-block;</p>
+                <p>}</p>
+              </code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
