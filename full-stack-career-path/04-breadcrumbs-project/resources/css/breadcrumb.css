@@ -1,0 +1,19 @@
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li.location + li.location::before {
+  padding-right: 5px;
+  content: ">";
+}
+
+.attribute a {
+  color: green;
+  position: relative;
+}
+.attribute a::after {
+  content: "x";
+  font-size: 10px;
+  position: absolute;
+  top: -1px;
+}
