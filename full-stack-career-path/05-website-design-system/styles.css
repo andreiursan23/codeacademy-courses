@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.title,
+.subtitle {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.subtitle {
+  font-size: 25px;
+  margin: 20px 0 30px 0;
+}
+
+/* Layout */
+section {
+  padding: 20px;
+  border: 2px solid gray;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.colors-list,
+.fonts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Colors section */
+.color {
+  height: 10em;
+  width: 10em;
+  margin: 0 1em 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color p {
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.cool-blue {
+  background: #2d5dcc;
+}
+
+.pink {
+  background: #d957d9;
+}
+
+.mint-green {
+  background: #4fe0b0;
+}
+
+.beige {
+  background: #efd9ca;
+}
+
+.mint-green p,
+.beige p {
+  color: black;
+}
+
+/* Fonts section */
+.font {
+  width: 45%;
+  margin: 0 1.5em 1.5em 0;
+}
+
+.font p {
+  margin-bottom: 0.7em;
+  font-size: 16px;
+}
+
+.font p:first-of-type {
+  text-decoration: underline;
+  margin-bottom: 1em;
+  font-size: inherit;
+}
+
+.font p:nth-of-type(3) {
+  font-weight: 700;
+}
+
+.font p:nth-of-type(4) {
+  font-style: italic;
+}
+
+.source-code-pro,
+.source-code-pro p {
+  font-family: "Source Code Pro", monospace;
+}
+
+.nunito-sans,
+.nunito-sans p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.poppins,
+.poppins p {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Subtitles Section */
+.text-styles-list .text-style {
+  margin-bottom: 2em;
+}
+
+.text-style p:first-of-type {
+  color: white;
+  background: black;
+  padding: 0.5em;
+  margin-bottom: 0.7em;
+}
+
+.text-style ul {
+  margin-left: 2em;
+  list-style: square;
+}
+
+.text-style li {
+  line-height: 1.3;
+}
+
+.main-page-heading {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.paragraph-text {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
